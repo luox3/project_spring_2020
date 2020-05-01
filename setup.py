@@ -6,8 +6,8 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="nobel_winners", 
     version="0.0.1",
-    author="byunghyun_kang",
-    author_email="d",
+    author="Xing Luo",
+    author_email="xing-luo@outlook.com",
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
