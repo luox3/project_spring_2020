@@ -1,3 +1,11 @@
+from nobel_winners import get_data, find_winners
+
+def test_get_data():
+    expected = pd.DataFrame(...)
+    filename = ...
+    result = get_data(filename)
+    assert result == expect
+
 def test_nothing_in_particular():
     from pathlib import Path
     current_dir = Path.cwd()
