@@ -11,7 +11,7 @@ setuptools.setup(
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/packaging_demo",
+    url="https://github.com/luox3/project_spring_2020",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
