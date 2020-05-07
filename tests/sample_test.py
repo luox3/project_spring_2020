@@ -13,11 +13,11 @@ def test_get_data():
     result = get_data(filename)
     assert result == expected
 
-def test_get_winners():
+def test_make_plots():
     expected = ['einstein','bohr']
     input_df = get_data(SAMPLE_CSV)
-    result = get_winners(input_df)
-    assert expected == result
+    make_plots(input_df)
+
 
 def test_nothing_in_particular():
     from pathlib import Path
