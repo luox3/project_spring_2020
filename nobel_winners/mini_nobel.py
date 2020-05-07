@@ -9,11 +9,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-# %%
-# loading DataFrame from 'data/nobel_raw.csv'
-nobel_raw = pd.read_csv('~/project_spring_2020/data/nobel_raw.csv')
 
-# %%
+def get_data(filename):
+    nobel_raw = pd.read_csv(filename)
+    return nobel_raw
+
+
 # removing the rows when there are missing values in 'firstname' and 'surname' columns
 nobel_rm_fs = nobel_raw.dropna(how='any', subset=['firstname', 'surname'])
 
