@@ -11,7 +11,13 @@ def test_get_data():
     expected = pd.DataFrame.read_csv(SAMPLE_CSV.with_name("sample_output.csv"))
     filename = SAMPLE_CSV
     result = get_data(filename)
-    assert result == expect
+    assert result == expected
+
+def test_get_winners():
+    expected = ['einstein','bohr']
+    input_df = get_data(SAMPLE_CSV)
+    result = get_winners(input_df)
+    assert expected == result
 
 def test_nothing_in_particular():
     from pathlib import Path
