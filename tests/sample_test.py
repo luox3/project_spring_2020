@@ -1,8 +1,15 @@
-from nobel_winners import get_data, find_winners
+from nobel_winners.mini_nobel import get_data, find_winners
+from pathlib import Path
+
+
+tests_dir = Path(__file__).parent
+tests_data_dir = tests_dir / 'data'
+SAMPLE_CSV = tests_data_dir / 'raw_nobel.csv'
 
 def test_get_data():
-    expected = pd.DataFrame(...)
-    filename = ...
+
+    expected = pd.DataFrame.read_csv(SAMPLE_CSV.with_name("sample_output.csv"))
+    filename = SAMPLE_CSV
     result = get_data(filename)
     assert result == expect
 
