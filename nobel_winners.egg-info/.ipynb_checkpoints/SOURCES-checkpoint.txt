@@ -1,0 +1,9 @@
+README.md
+setup.py
+nobel_winners/__init__.py
+nobel_winners/mini_nobel.py
+nobel_winners/sample_file.py
+nobel_winners.egg-info/PKG-INFO
+nobel_winners.egg-info/SOURCES.txt
+nobel_winners.egg-info/dependency_links.txt
+nobel_winners.egg-info/top_level.txt
